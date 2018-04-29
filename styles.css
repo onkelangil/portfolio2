@@ -13,6 +13,7 @@ a {
   color: #292b2c;
 }
 
+
 .navbar {
   margin-bottom: 20px;
 }
@@ -36,22 +37,6 @@ a {
 .navbar-nav .nav-link {
   padding-right: 20px;
   padding-left: 20px;
-}
-.img-fluid{
-  display: block;
-}
-@media only screen and (max-width: 728px)
-[class*="col-"] {
-    width: 100%;
-}
-.crop {
-    height: 200px;
-    width: 100%;
-    overflow: hidden;
-}
-.crop img {
-    height: 100%;
-    width: auto;
 }
 .hovereffect {
 width:100%;
