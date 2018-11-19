@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>Anders Lykkegaard</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/c23b7abab9.js"></script>
+
+	<!-- Custom styles for this template -->
+	<link href="../styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+		<p style="text-align: center;">Anders Lykkegaard</p>
+
+		<nav class="navbar navbar-light justify-content-center">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="container">
+		<img src="../image/peacekeeper.jpg" class="img-fluid rounded">
+		<p class="h2 text-center text-danger" id="titleText">PeaceKeeper</p>
+		<p class="h3 blockquote-footer text-center">Title: Augmenting the Awareness and Communication of Noise Pollution in Student Dormitories</p>
+		<br>
+		<div class="row">
+			<div class="col-12 text-center">
+				<a href="https://pure.au.dk/ws/files/108943860/PeaceKeeper_CameraReady.pdf" target="_blank" role="button" class="btn btn-danger">Link to article</a>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-lg-8">
+				<p class="text-left">
+					Peacekeeper is an ambient information system which augments the awareness and communication of noise that students produces in dormitories. PeaceKeeper consists of an augmented ear and ball which is illustrated in the image below. The project was publish at the Augmented Human conference in Geneva.
+					<br>
+					<br>
+					The PeaceKeeper concept was discovered in an initial user study with nine students from two different dormitories. It became clear from the study that noise pollution was a big challenge and it interrupted people in doing their homework. However, we also discovered that students were not aware when their neighbor, for instance, could hear the noise they made. The students were actually interested in knowing when people could hear them so they could turn down the volume. Another motivation for the project was to make the system anonymous to avoid conflicts since they live together (regularly you have to knock on the door to ask if they want to turn down the volume).
+					<br>
+					As seen in the image, the ear has three states, A, B, and C (the light in C is pulsing).
+				</p>
+				<br>
+				<img src="../image/statesofpeacekeeper.png" class="img-fluid rounded">
+				<br>
+				<br>
+				<p>
+					The A) state is when the surroundings cannot hear you, B) is when your surroundings can hear you (and you have the opportunity to turn down the volume), and C) is when your surroundings can hear noise and squeezes the ball (D) (the ball should be the size of a stress ball) to communicate that the noise annoys them.
+					The system was evaluated with users in a small concept validation, and the feedback we received was that the design was nice, the semantics of the colors fit, but that a more noticeable color than white (B) might work better, and that they found the concept valuable and could see themselves use it. 
+					<br>
+					<br>
+					<b class="text-danger">System description</b>: the ear consisted of an ATmega8 (microcontroller), PCB, an XBee (radio communication), MK115 sound detector, and NeoPixels (programmable LED’s). The augmented ball consisted of an ATmega8, a pressure pad (checks if the ball is squeezed), and XBee.
+					<br>
+					<br>
+					Unfortunately, there is no video of the project.
+				</p>
+			</div>
+			<div class="col"></div>
+		</div>
+	</div>
+
+
+	<hr>
+	<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>Anders Lykkegaard</p>
+			</div>
+			<div class="navbar-text pull-right">
+				<a href="https://www.facebook.com/anderslykkegaard" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: grey;"></i></a>
+				<a href="https://www.linkedin.com/in/anders-lykkegaard-916356148/" target="_blank"><i class="fa fa-linkedin-square fa-2x" style="color: grey;" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+    <!-- Bootstrap core JavaScript
+    	================================================== -->
+    	<!-- Placed at the end of the document so the pages load faster -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    </body>
+    </html>

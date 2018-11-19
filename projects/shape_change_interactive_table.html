@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>Anders Lykkegaard</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/c23b7abab9.js"></script>
+
+	<!-- Custom styles for this template -->
+	<link href="../styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+		<p style="text-align: center;">Anders Lykkegaard</p>
+
+		<nav class="navbar navbar-light justify-content-center">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="container">
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cA37oJIA9nU"></iframe>
+		</div>
+		<p class="h2 text-center text-danger" id="titleText">Combining Shape Changing Interfaces and Interactive Table</p>
+		<br>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-lg-8">
+				<p class="text-left">
+					(The video is in Danish. Sorry for the quality)
+					<br>
+					This was a really fun and challenging project and is the reasons why I love IT. Our case was to go nuts, and we had no requirements besides using Unity as a part of the project. We decided to combine shape-changing interfaces and an interactive table to design a collaborative labyrinth ball game, illustrated below.
+					<br>
+					<br>
+					<img src="../image/kuglespil.jpg" class="img-fluid rounded">
+					<br>
+					<br>
+					<b class="text-danger">The research question</b> was how we could add an additional layer to an interactive table and create a tighter link between the physical and digital world.
+					<br>
+					<br>
+					In the game, each person controls an axis (with a controller) and a ball. They must get both balls through the labyrinth by collaborating and moving the axes. The controllers were shape-changing and changed size depending on how much each player presses on the controller. The harder a player pressed the bigger the controller got whereas the other controller got smaller, vice versa. On the interactive table, we had the labyrinth and the balls which imitated the controller, so they got bigger and smaller depending on the controller.
+					<br>
+					<br>
+					<figure class="figure">
+						<img src="../image/controller_input_output.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+						<figcaption class="figure-caption">The left image, showing the size change of the controller and the ball, the right image illustrates input/the pressure pads and the shape-change of the controller (output)</figcaption>
+					</figure>
+					<br>
+					The players must change the size of their balls to get through the labyrinth, due to small openings that you need to get through or holes you need to roll over.
+					<br>
+					<br>
+					<figure class="figure">
+						<img src="../image/setup_test.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+						<figcaption class="figure-caption">User evaluation</figcaption>
+					</figure>
+					<br>
+					There was two evaluations, one without users and one with. The evaluation without users was mostly usability testing. <b class="text-danger">The user evaluation</b> showed that participants enjoyed the game and they really liked the cooperative aspect of the game. Some even got surprised by the shape-change in the controller. Additionally, we could deduce qualities/challenges between shape-changing interfaces and interactive tables.
+					<br>
+					<br>
+					<figure class="figure">
+						<img src="../image/diagram_done.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+						<figcaption class="figure-caption">Architecture diagram annotated with applied technologies</figcaption>
+					</figure>
+					<br>
+					A short explain of the drawing starting from the top. The two controllers consist of an Arduino Pro Mini, linear actuator, a Bluetooth module, a pressure pad, and under the controller a marker. The data from the pressure pads are transferred to the Android application. The smartphones compare the data from the controllers, calculates how large/small the controller must be, converts the data to OSC format, and transfer that data to the interactive table and Unity. This ensures that the balls correlate with the controller. The data transfers from our application to the interactive table, are handle by an Eventbus Editor, which listens for UDP-data (UDP is an internet protocol for data transfer) from a given port, to locate the marker location on the table and transfer data from the controller. The UDP-data is then converted to TUIO (protocol and API for tangible multitouch surfaces) which can be used in Unity.
+				</p>
+			</div>
+			<div class="col"></div>
+		</div>
+		<br>
+	</div>
+
+
+	<hr>
+	<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>Anders Lykkegaard</p>
+			</div>
+			<div class="navbar-text pull-right">
+				<a href="https://www.facebook.com/anderslykkegaard" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: grey;"></i></a>
+				<a href="https://www.linkedin.com/in/anders-lykkegaard-916356148/" target="_blank"><i class="fa fa-linkedin-square fa-2x" style="color: grey;" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+    <!-- Bootstrap core JavaScript
+    	================================================== -->
+    	<!-- Placed at the end of the document so the pages load faster -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    </body>
+    </html>

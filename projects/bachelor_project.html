@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>Anders Lykkegaard</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/c23b7abab9.js"></script>
+
+	<!-- Custom styles for this template -->
+	<link href="../styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+		<p style="text-align: center;">Anders Lykkegaard</p>
+
+		<nav class="navbar navbar-light justify-content-center">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="container">
+		<img src="../image/bachelor.jpg" class="img-fluid rounded">
+		<p class="h2 text-center text-danger" id="titleText">Bachelor Project</p>
+		<p class="h3 blockquote-footer text-center">Title: Exploring the Potential for Improvement in Parents of Small Children’s Sleep using Smartwatches and Embedded Sensors</p>
+		<br>
+		<div class="row">
+			<div class="col-12 text-center">
+				<a href="https://youtu.be/8RIXBUXWE70" target="_blank" role="button" class="btn btn-danger">Link to concept video</a>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-lg-8">
+				<p class="text-left">
+					In this bachelor’s project we attempted to investigate if we could improve parents with small children’s sleep using smartwatch sensors. At the beginning of the project, we investigated and experimented with different baby monitors, and challenges parents with small children experience. We also tested different wake-up methods, such as sound, light, haptic feedback (vibration), etc. <b class="text-danger">We discovered</b> that old baby monitor (using radio frequency and have the design of a walkie-talkie) were best, firstly, due to familiarity in usage which makes the use of these feel safe and comfortable, and secondly, that baby monitors using newer technology such as Bluetooth had many difficulties. The wake-up methods that we tested showed that haptic feedback had the possibility to wake-up one person instead of two, and that vibration was enough.
+					<br>
+					<br>
+					After the exploration, we used interviews combined with web surveys (send to different forums and social media groups). <i>And yes, I still get emails from them ;)</i>. These were used to obtain knowledge about habits and get a general overview, due to having no prior knowledge about having children.
+					<br>
+					<br>
+					From the knowledge, we developed a system in Android consisting of 3 smartphones and 2 smartwatches, illustrated in the image below, as well as a sequence diagram.
+				</p>
+			</div>
+			<div class="col"></div>
+		</div>
+		<br>
+		<img src="../image/bachelorsystem.jpg" class="img-fluid rounded">
+		<br>
+		<br>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-lg-8">
+				<p class="text-left">
+					This system was rather large due to the smartwatches not having WiFi. WiFi was required since the initial studies indicated that Bluetooth performed poorly when used in baby monitors. Therefore, we used the smartphones acting as WiFi for the smartwatches to avoid Bluetooth.
+					<br>
+					<br>
+					After the system was built, we did a pilot study running for 5 days to find usability/user experience challenges and figure out if there were any features missing. From the pilot study, the system was improved so it worked for a longer period and we had developed an algorithm measuring the movement when parents were sleeping. The person that moved the most was woken up, by the watch (if the baby cried), because they were probably sleeping the lightest (we knew that this was a naive algorithm for measuring sleep level).
+					<br>
+					<br>
+					The improved prototype was evaluated in a longer study. <b class="text-danger">The results</b> showed confusion with all these devices, especially keeping track on the battery level. Additionally, we discovered that the parents really liked using the smartwatches since only one parent had to wake up and they had a positive attitude towards the concepts. Some of the participants even used the prototype in the afternoon. Last, we attempted to set the foundation when using smartwatches as baby monitor and discussed challenges/ opportunities.
+
+				</p>
+			</div>
+			<div class="col">
+			</div>
+		</div>
+		<br>
+		<div class="col-12 text-center">
+			<a href="../IT_BSc.PDF" target="_blank" role="button" class="btn btn-danger">Bachelor Project PDF</a>
+		</div>
+	</div>
+
+
+	<hr>
+	<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>Anders Lykkegaard</p>
+			</div>
+			<div class="navbar-text pull-right">
+				<a href="https://www.facebook.com/anderslykkegaard" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: grey;"></i></a>
+				<a href="https://www.linkedin.com/in/anders-lykkegaard-916356148/" target="_blank"><i class="fa fa-linkedin-square fa-2x" style="color: grey;" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+    <!-- Bootstrap core JavaScript
+    	================================================== -->
+    	<!-- Placed at the end of the document so the pages load faster -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    </body>
+    </html>
