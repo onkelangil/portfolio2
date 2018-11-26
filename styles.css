@@ -6,21 +6,22 @@ hr {
   	margin-bottom: 0rem;
   }
 body {
-  /*padding-top: 20px;*/
+  padding-top: 20px;
   padding-bottom: 20px;
-}
-a {
-  color: #292b2c;
+  background-color: #f8f8fa;
 }
 p{
 	margin-bottom: 0px;
 }
+#imageText {
+	color: #dc3545;
+	font-size: 1.05rem;
+}
+#projectimage{
+  padding-bottom: 3rem;
+}
 .nav{
 	text-align: center;
-}
-
-.bg-white {
-	background-color: #FFFFFF;
 }
 .navbar-nav {
   display: -webkit-box;
@@ -33,8 +34,15 @@ p{
       -ms-flex-direction: row;
           flex-direction: row;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   list-style: none;
+  font-size: 1.05rem;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	text-decoration: underline;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #dc3545;
 }
 .navbar-nav .nav-link {
   padding-right: 20px;
@@ -169,11 +177,6 @@ img{
 	padding-right: 0px;
 	padding-left: 0px;
 	padding-bottom: 15px;
-}
-
-#titleText {
-  margin-bottom: 1rem;
-  margin-top: 4rem;
 }
 .table thead th {
   vertical-align: top;
